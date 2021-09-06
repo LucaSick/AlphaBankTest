@@ -28,7 +28,7 @@ public class ApiController {
     private gifServiceProxy gproxy;
 
 
-    @GetMapping(value = "/pls/{currency}")
+    @GetMapping(value = "/test/{currency}")
     public RedirectView getCountries(@PathVariable("currency") String currency) throws IOException {
         LocalDate today = LocalDate.now();
         LocalDate yesterday = today.minusDays(1);
